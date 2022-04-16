@@ -27,7 +27,7 @@ public class Calculator {
     }
 
     public double power(int x, int y){
-        logger.info("Power of " + x +"raised to" + y + " is: " + Math.pow(x, y));
+        logger.info("Power of " + x +" raised to" + y + " is: " + Math.pow(x, y));
         return Math.pow(x,y);
     }
 }
