@@ -2,7 +2,6 @@ package calculator;
 import java.lang.Math;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.util.InputMismatchException;
 
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
@@ -13,9 +12,10 @@ public class Calculator {
 
     public double factorial(int x){
         double res = 1;
-        for(int i =2;i<=x;i++)
-        {
+        int i = 2;
+        while(i<=x){
             res = res*i;
+            i++;
         }
         logger.info("Factorial of "+x+"\t"+ res);
         return res;
