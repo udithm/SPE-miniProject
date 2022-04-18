@@ -61,4 +61,12 @@ public class CalculatorTest {
         assertNotEquals ("False Positive - power of base Int to power Int ", 0, calc.power(2, 0), DELTA);
         assertNotEquals ("False Positive - power of base Int to power Int ", 12, calc.power(4, 3), DELTA);
     }
+
+    @Test
+    public void sample_run(){
+        assertNotEquals ("False Positive - power of base Int to power Int ", 0, calc.power(2, 0), DELTA);
+        assertNotEquals ("False Positive - power of base Int to power Int ", 12, calc.power(4, 3), DELTA);
+        assertEquals ("True Positive - power of base Int to power Int ", 2.302585092994046, calc.log(10), DELTA);
+        assertEquals ("True Positive - power of base Int to power Int ", 1, calc.factorial(1), DELTA);
+    }
 }

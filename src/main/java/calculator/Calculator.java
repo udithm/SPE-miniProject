@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
     public double square_root(int x){
-        logger.info("Square root of "+x+"\t"+ Math.sqrt(x));
+        logger.info("Computing Square root");
         return Math.sqrt(x);
     }
 
@@ -17,17 +17,17 @@ public class Calculator {
             res = res*i;
             i++;
         }
-        logger.info("Factorial of "+x+"\t"+ res);
+        logger.info("Computing factorial");
         return res;
     }
 
     public double log(int x){
-        logger.info("Logarithm of "+x+"\t"+ Math.log(x));
+        logger.info("Computing log");
         return Math.log(x);
     }
 
     public double power(int x, int y){
-        logger.info("Power of " + x +" raised to" + y + " is: " + Math.pow(x, y));
+        logger.info("Computing power");
         return Math.pow(x,y);
     }
 }
